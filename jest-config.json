@@ -1,0 +1,19 @@
+{
+	"collectCoverageFrom": [
+		"<rootDir>/src/**/*"
+	],
+	"coveragePathIgnorePatterns": [
+		"<rootDir>/node_modules/",
+		"<rootDir>/__tests__"
+	],
+	"coverageReporters": ["json", "lcov", "text", "html"],
+	"notify": true,
+	"testEnvironment": "node",
+	"testPathIgnorePatterns": [
+    "/node_modules/",
+    "/src"
+	],
+  "testRegex": ".+\\.test.js",
+  "testURL": "http://localhost",
+  "verbose": true
+}

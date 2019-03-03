@@ -1,0 +1,63 @@
+{
+  "name": "node-typescript-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack",
+    "start": "./node_modules/.bin/ts-node ./src/index.ts",
+    "docs": "./node_modules/.bin/typedoc --mode file --target ES6 --name 'Source documentation' --out ./docs/ ./src/",
+    "lint": "./node_modules/.bin/tslint -c ./tslint.json --project ./tsconfig.json 'functions/**/*.ts'",
+    "test": "./node_modules/.bin/jest --coverage"
+  },
+  "author": "Konrad Kiss <konrad@konradkiss.com>",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "devDependencies": {
+    "@types/jest": "^24.0.9",
+    "@types/node": "^11.10.4",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^24.1.0",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^5.15.0",
+    "eslint-plugin-import": "^2.8.0",
+    "jest": "^24.1.0",
+    "jsdom": "13.2.0",
+    "prettier": "^1.15.3",
+    "regenerator-runtime": "^0.13.1",
+    "require-all": "^3.0.0",
+    "source-map-support": "^0.5.0",
+    "ts-jest": "^24.0.0",
+    "ts-loader": "^5.3.3",
+    "ts-node": "^8.0.2",
+    "tslint": "^5.10.0",
+    "tslint-config-prettier": "^1.17.0",
+    "tslint-consistent-codestyle": "^1.15.0",
+    "tslint-eslint-rules": "^5.3.1",
+    "tslint-jsdoc-rules": "^0.2.0",
+    "tslint-misc-rules": "^3.5.1",
+    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-sonarts": "^1.8.0",
+    "typedoc": "^0.14.2",
+    "typescript": "^3.1.6",
+    "webpack": "^4.0.0",
+    "webpack-cli": "^3.2.3"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
