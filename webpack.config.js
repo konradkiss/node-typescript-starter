@@ -21,7 +21,7 @@ module.exports = {
   output: {
     libraryTarget: 'commonjs2',
     filename: 'index.js',
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, '.build'),
   },
   mode: "none",
   watchOptions: {
